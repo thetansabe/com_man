@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container login-page">
+        <div class="auth-form login-form card form-control">
+            <!-- error server author alert -->
+            <div class="auth-form_alert-failed alert alert-danger alert-dismissable hide">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                
+            </div>
+
+            <div class="auth-form__username form-group">
+                <label for="username">Username</label>
+
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fas fa-user"></i>
+                        </div>   
+                    </div>
+                    <input type="text" name = "username" class="form-control" id="auth-form__username-input" placeholder="Username">
+
+                </div>
+
+                <span class="error-msg text-danger"></span>
+            </div>
+
+            <div class="auth-form__password form-group">
+                    <label for="Password">Password</label>
+    
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-unlock"></i>
+                            </div>   
+                        </div>
+                        <input type="password" name = "password" class="form-control" id="auth-form__password-input" placeholder="Password">
+                    </div>
+                    
+                    <span class="error-msg text-danger"></span>
+            </div>
+
+            <div class="auth-form__submit form-group d-flex flex-row-reverse">
+                    <button class="auth-form__submit-btn btn btn-primary pr-5 pl-5 ">Login</button>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Vertical Center Modal -->
+    <div class="modal fade" id="re-sign-up_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Default Password!!! <br> You have to sign up again</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Resign up form -->
+                <div class="resign-form">
+                    <div class="resign-form_alert-success alert alert-success alert-dismissable hide">
+                    </div>
+                    <div class="resign-form__password-new form-group">
+                            <label for="Password">New Password</label>
+            
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-unlock"></i>
+                                    </div>   
+                                </div>
+                                <input type="password" class="form-control" id="resign-form__password-input" placeholder="Password">
+                            </div>
+                            
+                            <span class="error-msg text-danger"></span>
+                    </div>
+
+                    <div class="resign-form__password-reenter form-group">
+                        <label>Reenter Password</label>
+        
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fas fa-unlock"></i>
+                                </div>   
+                            </div>
+                            <input type="password" class="form-control" id="resign-form__password-certificate" placeholder="Password">
+                        </div>
+                        
+                        <span class="error-msg text-danger"></span>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary resign-form_submit-btn">Login</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
